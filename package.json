@@ -1,0 +1,24 @@
+{
+  "name": "santae2e",
+  "version": "1.0.0",
+  "description": "e2e tests",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmirr/SantaE2E-HW16.git"
+  },
+  "author": "Dmirr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmirr/SantaE2E-HW16/issues"
+  },
+  "homepage": "https://github.com/Dmirr/SantaE2E-HW16#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^12.13.0"
+  }
+}
