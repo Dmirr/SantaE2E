@@ -1,6 +1,6 @@
-const registerFields = require("../fixtures/pages/registerPage.json");
-const regButton = require("../fixtures/pages/buttons.json");
-const testData = require("../fixtures/testData.json");
+const registerFields = require("../../fixtures/pages/registerPage.json");
+const regButton = require("../../fixtures/pages/buttons.json");
+const testData = require("../../fixtures/testData.json");
 import { faker } from "@faker-js/faker";
 
 describe("test email field", () => {
