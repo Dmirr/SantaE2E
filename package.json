@@ -10,7 +10,7 @@
     "cy:config2": "cypress run --spec 'cypress/e2e/Spec2/*' --config-file cypress.config_2.js --browser electron --record --key cabf7cef-dae1-42be-b740-dbc679e89e38",
     "cy:all": "npm run cy:config1 & npm run cy:config2",
     "cy:parallel": "npm run cy:config1 -- --group CHrome --ci-build-id 2 --parallel & npm run cy:config2 -- --group Electron --ci-build-id 2 --parallel",
-    "cy:jenkins:parallel": "npm run cy:config1 -- --group CHrome --ci-build-id %BUILD_NUMBER% --parallel & npm run cy:config2 -- --group Electron --ci-build-id %BUILD_NUMBER% --parallel"
+    "cy:jenkins:parallel": "npm run cy:config1 -- --group CHrome --ci-build-id $BUILD_NUMBER --parallel & npm run cy:config2 -- --group Electron --ci-build-id $BUILD_NUMBER --parallel"
   },
   "repository": {
     "type": "git",
