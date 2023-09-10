@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="32.519" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-09-10T14:04:06" tests="0" file="cypress\e2e\Spec2\passField.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="test email field" timestamp="2023-09-10T14:04:06" tests="2" time="32.506" failures="2">
+    <testcase name="test email field user unsuccessful registered with  correct name and empty email field" time="0.000" classname="user unsuccessful registered with  correct name and empty email field">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;Не-корректное поле&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Не-корректное поле' but never did.
+    at Context.eval (webpack://santae2e/./cypress/e2e/Spec2/passField.cy.js:20:38)]]></failure>
+    </testcase>
+    <testcase name="test email field user unsuccessful registered with invalid email and correct name" time="0.000" classname="user unsuccessful registered with invalid email and correct name">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;Не-корректный email&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Не-корректный email' but never did.
+    at Context.eval (webpack://santae2e/./cypress/e2e/Spec2/passField.cy.js:26:39)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

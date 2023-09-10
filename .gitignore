@@ -108,3 +108,5 @@ dist
 # Dependency directory cypress
 cypress/videos
 cypress/screenshots
+
+credentials.json
