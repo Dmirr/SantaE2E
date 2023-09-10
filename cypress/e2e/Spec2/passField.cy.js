@@ -17,12 +17,12 @@ describe("test email field", () => {
   it("user unsuccessful registered with  correct name and empty email field", () => {
     cy.get(registerFields.nameField).type(correctName);
     cy.get(regButton.regButton).click();
-    cy.contains("Некорректное поле").should("exist");
+    cy.contains("Не-корректное поле").should("exist");
   });
   it("user unsuccessful registered with invalid email and correct name", () => {
     cy.get(registerFields.nameField).type(correctName);
     cy.get(registerFields.emailField).type(testData.uncorrectEmail);
     cy.get(regButton.regButton).click();
-    cy.contains("Некорректный email").should("exist");
+    cy.contains("Не-корректный email").should("exist");
   });
 });
