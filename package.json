@@ -12,7 +12,7 @@
     "cy:all": "npm run cy:config1 & npm run cy:config2",
     "cy:parallel": "npm run cy:config1 -- --group CHrome --ci-build-id 2 --parallel & npm run cy:config2 -- --group Electron --ci-build-id 2 --parallel",
     "cy:jenkins:parallel": "npm run cy:config1 -- --group CHrome --ci-build-id ${BUILD_NUMBER} --parallel & npm run cy:config2 -- --group Electron --ci-build-id ${BUILD_NUMBER} --parallel",
-    "jira-import": "curl -H \"Content-Type: text/xml\" -X POST -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiI0MmM5YTliMy04OGIxLTNkNmUtYjQ4OS0wNmMzM2I5OTc3NzUiLCJhY2NvdW50SWQiOiI3MTIwMjA6YjVmMTBjZjMtYTA4Yi00MzFmLTg1ZDYtNDkyZWEyZjRjNzgzIiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE2OTQzNDc2NDYsImV4cCI6MTY5NDQzNDA0NiwiYXVkIjoiM0RFQTZGNURBMEJBNEM5RTlDRTZEMkIwRjVBNkY3RkMiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiIzREVBNkY1REEwQkE0QzlFOUNFNkQyQjBGNUE2RjdGQyJ9.9ayUQKeYwFLm4Iixn5pYAX5ibsOsw3fKcYqmLzh5WTM\"  --data @\"D:/TestQA/SantaE2E/test-results.xml\" https://xray.cloud.getxray.app/api/v2/import/execution/junit?projectKey=IA"
+    "jira-import": "curl -H \"Content-Type: text/xml\" -X POST -H \"Authorization: Bearer {secret.JIRA_TOKEN}\"  --data @\"D:/TestQA/SantaE2E/test-results.xml\" https://xray.cloud.getxray.app/api/v2/import/execution/junit?projectKey=IA"
   },
   "repository": {
     "type": "git",
